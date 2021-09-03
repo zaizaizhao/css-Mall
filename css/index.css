@@ -1,0 +1,252 @@
+.main {
+    width: 980px;
+    height: 455px;
+    margin-left: 220px;
+    margin-top: 10px;
+}
+.focus {
+    position: relative;
+    width: 721px;
+    height: 455px;
+    float: left;
+    background-color: gray;
+    overflow: hidden;
+}
+.focus ul {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 600%;
+}
+.focus ul li {
+    float: left;
+}
+.arrow-l{
+    width:20px;
+    height: 40px;
+    display: none;
+    line-height: 40px;
+    text-align: center;
+    top: 50%;
+    position: absolute;
+    float: left;
+    margin-top: -20px;
+    background-color: #ccc;
+    border-radius: 0 20px 20px 0;
+    opacity: .5;
+    z-index: 2;
+}
+.arrow-r {
+    width: 20px;
+    height: 40px;
+    display: none;
+    line-height: 40px;
+    text-align: center;
+    right: 0;
+    top: 50%;
+    margin-top: -20px;
+    position: absolute;
+    float: right;
+    background-color: #ccc;
+    border-radius: 20px 0 0 20px;
+    opacity: .5;
+    z-index: 2;
+}
+.circle {
+    /*display: block;*/
+    float: left;
+    top: 90%;
+    left: 30px;
+    position: absolute;
+    /*width: 130px;*/
+    height: 20px;
+    /*opacity: 0.7;*/
+    background-color: rgba(255,255,255,.3);
+    border-radius: 10px;
+}
+.circle li{
+    /*display: inline-block;*/
+    height: 14px;
+    width: 14px;
+    float: left;
+    background-color: #fff;
+    border-radius: 50%;
+    margin:3px 6px;
+    opacity: 0.7;
+}
+.circle .current {
+    background-color: #ff5000;
+}
+.newsflash {
+    width: 250px;
+    height: 455px;
+    /*background-color: purple;*/
+    float: right;
+}
+.news {
+    height: 165px;
+    border: 1px solid #e4e4e4;
+    /*background-color: pink;*/
+}
+.lifeservice {
+    height: 209px;
+    background-color: white;
+    border: 1px solid #e4e4e4;
+    border-top: 0;
+    overflow: hidden;
+}
+.lifeservice ul {
+    width: 252px;
+}
+.lifeservice ul li {
+    float: left;
+    height: 71px;
+    width: 63px;
+    border: 1px solid #e4e4e4;
+    border-top: 0;
+    border-left: 0;
+    text-align: center;
+}
+
+.bargain {
+    width: 250px;
+    height:75px;
+    overflow: hidden;
+    margin-top: 5px;
+}
+.news-hd {
+    height: 33px;
+    line-height: 33px;
+    /*给父元素垂直居中，line-height具有继承性*/
+    padding: 0 15px;
+    border-bottom: 1px dotted #e3e3e3;
+}
+.news-hd h5 {
+    float: left;
+    font-size: 15px;
+}
+.news-hd .more {
+    float: right;
+}
+.news-hd .more::after {
+    font-family: 'icomoon';
+    content: "\ea42";
+}
+.news-bd {
+    padding: 5px 15px;
+}
+.news-bd ul li {
+    height: 24px;
+    line-height: 24px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.lifeservice ul li i {
+
+    display: inline-block;
+    width:24px;
+    height: 28px;
+    margin-top:12px;
+    background: url("../images/icons.png") no-repeat -19px -15px;
+}
+/*推荐模块制作*/
+.recom {
+    height: 163px;
+    background-color: #ebebeb;
+    margin-top: 12px;
+}
+.recom_hd {
+    float: left;
+    height: 163px;
+    width: 205px;
+    background-color: #5c5251;
+    text-align: center;
+    padding-top: 30px;
+}
+.recom_bd {
+    float: left
+}
+.recom_bd li {
+    position: relative;
+    float: left;
+}
+.recom_bd li {
+    width: 248px;
+    height: 163px;
+/*    定义图片大小*/
+}
+.recom_bd li:nth-child(-n+3)::after {
+    content: "";
+    position: absolute;
+    top: 10px;
+    right: 0;
+    height: 145px;
+    width: 1px;
+    background-color: #ddd;
+}
+.box_hd {
+    height: 30px;
+    border-bottom: 2px solid #c81623;
+}
+.box_hd h3 {
+    float: left;
+    font-size: 18px;
+    color: #c81623;
+    font-weight: 400;
+}
+.tab_list {
+    float: right;
+    line-height: 30px;
+}
+.tab_list ul li {
+    float: left;
+}
+.tab_list ul li a {
+    margin: 0 15px;
+}
+.floor {
+    margin-top:30px;
+}
+.box_bd {
+    height: 361px;
+    /*background-color: pink;*/
+}
+.tab_list_item>div {
+    float: left;
+}
+.col_210 {
+    width: 210px;
+    height: 361px;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+.col_210 ul li {
+    width: 85px;
+    height: 34px;
+    text-align: center;
+    line-height: 34px;
+    float: left;
+    margin-right: 10px;
+    border-bottom: 1px solid #ccc;
+}
+.col_210 ul {
+    padding-left: 12px;
+}
+.col_329 {
+    width: 329px;
+    height: 361px;
+}
+.col_221 {
+    width: 221px;
+    height: 361px;
+    border-right: 1px solid #ccc;
+}
+.col_219 {
+    width: 219px;
+    height: 361px;
+}
+.bb {
+    display:block;
+    border-bottom: 1px solid #ccc;
+}
